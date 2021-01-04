@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REGISTERING FORM</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="cont">
+            <form class="form sign-in" method="POST" action="veriflogin.php">
+       <h2>Sign In</h2>
+      <label>
+          <input type="email"  name="login" placeholder="User ID" autofocus>
+               </label>
+          <br>
+              <label>
+          <input type="password"name="mdp" placeholder="Password">
+             </label>
+          <br>
+            <button  class="submit" type="submit">Sign In</button>
+          <hr>
+ 
+      </form>
+
+
+    <div class="sub-cont">
+      <div class="img">
+        <div class="img-text m-up">
+          <h2>New here?</h2>
+          <p>Sign up and begin your journey!</p>
+        </div>
+        <div class="img-text m-in">
+          <h2>One of us?</h2>
+          <p>If you already has an account, just sign in. We've missed you!</p>
+        </div>
+        <div class="img-btn">
+          <span class="m-up">Sign Up</span>
+          <span class="m-in">Sign In</span>
+        </div>
+      </div>
+
+
+
+
+
+   <form onsubmit="return validateForm()" name="myForm" class="form sign-up" method="POST" action="registerC.php">
+       <h2>Sign Up</h2>
+           <label>
+                                <input  id="nom" name="nom" type="text" placeholder="nom"   />
+                  
+  </label>
+                  
+                                    <label>
+                                <input  id="prenom" name="prenom" type="text" placeholder="prenom"   />
+                  
+  
+                </label>
+                             
+                            
+                              <label>
+                                <input  id="mail" name="mail" type="email" placeholder="mail"   />
+                  
+  
+                     </label> 
+                               <label>
+                                <input  id="username" name="username" type="text" placeholder="username"   />
+                  
+  
+                     </label>
+
+                                 <label>
+                                <input  id="mdp" name="mdp" type="password" placeholder="mdp"   />
+                  
+  
+               </label> 
+                 <button type="submit" class="submit">Sign Up Now</button>
+       
+          <a href="login.html" /> 
+          <hr>
+        </div>
+      </form>
+        <script>
+
+function validateForm() {
+      var nom = document.forms["myForm"]["nom"].value;
+ var prenom = document.forms["myForm"]["prenom"].value;
+ var mail = document.forms["myForm"]["mail"].value;
+ var username = document.forms["myForm"]["username"].value;
+ var mdp = document.forms["myForm"]["mdp"].value;
+  if (nom == "") {
+    alert("nom vide");
+    return false;
+  }
+   if (prenom == "") {
+    alert("prenom vide");
+    return false;
+  }
+    if (mail == "") {
+    alert("mail vide");
+    return false;
+  } 
+      if (username == "") {
+    alert("username vide");
+    return false;
+  } 
+      if (mdp == "") {
+    alert("mdp vide");
+    return false;
+  } 
+ 
+    alert("Ajout du compte avec success");    
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+    </div>
+  </div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
